@@ -1,0 +1,65 @@
+.navbar{
+ background:#;
+}
+.nav-link , .navbar-brand{
+ color: #f4f4f4;
+ cursor: pointer;
+}
+.nav-link{
+ margin-right: 1em !important;
+}
+.nav-link:hover{
+ background: #;
+ color: #f97300;
+}
+.navbar-collapse{
+ justify-content: flex-end;
+}
+.navbar-toggler{
+  background:#fff !important;
+}
+.navbar-collapse{
+ justify-content: flex-end;
+}
+.bg-dark{
+background-color:#343a40!important
+}
+.bg-primary{
+background-color:#007bff!important
+}
+.header{
+ background-image: url('itk.jpg');
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
+}
+.overlay{
+ position: absolute;
+ min-height: 125%;
+ min-width: 100%;
+ left: 0;
+ top: 0;
+ background: rgba(0,0,0,0.5);
+}
+
+.container{
+  position: absolute;
+  top: 20%;
+  margin: center;
+  padding: 2em;
+}
+.container h3{
+  color:#FFFFF0 ;
+  font-size: 60px;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  width: 180%;
+  line-height: 1.5;
+}
+.container p{
+  color:#FFFFF0;
+  font-size: 30px;
+  font-family:
+  width: 140%;
+  line-height: 1.5;
+  margin : center;
+}

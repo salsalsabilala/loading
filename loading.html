@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src='main.js'></script>
+        <style>
+            body {
+                background-image: url('itk.jpg');
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center;
+                margin: 10px 10px 10px;
+                padding : 20px 170px 170px;
+                padding-top: 100px;
+            }
+            .middle  {
+                text-align: center;
+
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 700px;
+                height: 5px;
+                margin: auto;
+            }
+            #tombol {
+                height: 50px;
+                width: 120px;
+                margin-bottom: 60px;
+            }
+            .progress {
+                height: 60px;
+            }
+
+        </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row" aligni-text = center>
+        <div class="col-lg-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg fixed-top ">
+   <a class="navbar-brand" href="#">salsalsabilala</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+ </nav>
+      <header>
+            <div class="overlay"></div>
+
+            <div class="container">
+              <h3> Kalimantan Technology of Institute
+              <p>click button below to our website </h3>
+                <div class="middle">
+                    <div class="start">
+                        <button class='btn btn-dark' border="20px" id="tombol">click here</button>
+                    </div>
+                    <div class="go-center">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
+        <script src=js/jquery-3.2.0.js></script>
+        <script>
+        $(document).ready(() => {
+            $('.full-background').height($(window).height());
+            $('#tombol').click(() => {
+                $('.progress-bar').animate({
+                    width: "100%"
+                }, 10000, () => {
+                    let oke = confirm('Hi, do you want to redirected to itk.ac.id?');
+                    if(oke){
+                        window.location.href = 'http://itk.ac.id';
+                    }
+                });
+            });
+        });
+        </script>
+  </body>
+</html>
